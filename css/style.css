@@ -1,0 +1,267 @@
+/* ===================================
+   CommandHQ AI
+   Premium Landing Page Styles
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0b1120;
+    color:#ffffff;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(11,17,32,.90);
+    backdrop-filter:blur(15px);
+    z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo h1{
+    color:#4F9DFF;
+    font-size:30px;
+    font-weight:800;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#4F9DFF;
+}
+
+.login-btn{
+    background:#4F9DFF;
+    padding:10px 18px;
+    border-radius:8px;
+}
+
+/* Hero */
+
+.hero{
+    padding:170px 0 120px;
+}
+
+.hero .container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero h2{
+    font-size:58px;
+    font-weight:800;
+    margin-bottom:25px;
+    line-height:1.1;
+}
+
+.hero p{
+    color:#cbd5e1;
+    font-size:20px;
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.primary-btn,
+.secondary-btn{
+    text-decoration:none;
+    padding:16px 28px;
+    border-radius:10px;
+    font-weight:700;
+}
+
+.primary-btn{
+    background:#4F9DFF;
+    color:#fff;
+}
+
+.primary-btn:hover{
+    background:#3c84e6;
+}
+
+.secondary-btn{
+    border:2px solid #4F9DFF;
+    color:#4F9DFF;
+}
+
+.secondary-btn:hover{
+    background:#4F9DFF;
+    color:white;
+}
+
+/* Dashboard Card */
+
+.dashboard-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:20px;
+    padding:35px;
+    backdrop-filter:blur(20px);
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+
+.dashboard-card h3{
+    margin-bottom:20px;
+}
+
+.dashboard-card p{
+    color:#94a3b8;
+}
+
+.dashboard-card h2{
+    margin:10px 0 25px;
+    color:#4F9DFF;
+}
+
+/* Features */
+
+.features{
+    padding:100px 0;
+}
+
+.features h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:35px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#4F9DFF;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#4F9DFF;
+}
+
+.card p{
+    color:#cbd5e1;
+}
+
+/* Pricing */
+
+.pricing{
+    padding:100px 0;
+}
+
+.pricing h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.price-card{
+    background:#101827;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.price-card h2{
+    color:#4F9DFF;
+    margin:20px 0;
+}
+
+.featured{
+    border:2px solid #4F9DFF;
+    transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+    padding:40px 0;
+    border-top:1px solid rgba(255,255,255,.08);
+    text-align:center;
+    color:#94a3b8;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero .container{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:42px;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+header .container{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
